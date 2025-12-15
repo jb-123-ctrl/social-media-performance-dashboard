@@ -2,118 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Future Intern – Task 2 | Social Media Dashboard</title>
+    <title>Social Media Performance Dashboard | Task 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: Segoe UI, Arial, sans-serif;
             margin: 0;
-            background: #f4f7fb;
-            color: #333;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
         }
-        header {
-            background: linear-gradient(90deg, #4cc9f0, #4361ee);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        section {
-            padding: 30px;
-            max-width: 1100px;
+
+        .container {
+            max-width: 1200px;
             margin: auto;
+            padding: 40px 20px;
         }
-        h2 {
-            color: #4361ee;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 5px;
+
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 8px;
         }
-        img {
+
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #cfd8dc;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #333;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            margin-bottom: 40px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+            border-left: 5px solid #4cc9f0;
+            padding-left: 12px;
+        }
+
+        .dashboard-img {
             width: 100%;
             border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
             margin-top: 20px;
         }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-            margin-bottom: 30px;
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
         }
+
+        .links a {
+            text-decoration: none;
+            background: #4cc9f0;
+            color: #ffffff;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .links a:hover {
+            background: #4361ee;
+        }
+
         footer {
             text-align: center;
-            padding: 15px;
-            background: #eef2ff;
+            color: #b0bec5;
             font-size: 14px;
-        }
-        a {
-            color: #4361ee;
-            text-decoration: none;
-            font-weight: 600;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Future Intern – Task 2</h1>
-    <p>Social Media Performance Dashboard (Power BI)</p>
-</header>
+<div class="container">
 
-<section>
-    <div class="box">
-        <h2>📊 Project Overview</h2>
+    <h1>📊 Social Media Performance Dashboard</h1>
+    <p class="subtitle">
+        Future Interns – Data Science & Analytics | Task 2
+    </p>
+
+    <!-- Dashboard Section -->
+    <div class="card">
+        <h2>Dashboard Overview</h2>
         <p>
-            This project is part of <strong>Future Intern – Task 2</strong>.
-            The objective is to analyze social media campaign performance
-            using Power BI and present insights using interactive visuals.
+            This Power BI dashboard analyzes social media marketing performance across Facebook
+            and Instagram. It highlights key KPIs such as Spend, Revenue, ROI, CTR, Impressions,
+            Conversions, and detailed audience insights by age, gender, device, and platform.
         </p>
+
+        <!-- ✅ YOUR IMAGE LINK (FIXED) -->
+        <img 
+            src="dashbord%20screenshot.png"
+            alt="Social Media Performance Dashboard"
+            class="dashboard-img"
+        >
     </div>
 
-    <div class="box">
-        <h2>🛠 Tools & Technologies</h2>
-        <ul>
-            <li>Power BI</li>
-            <li>GitHub Pages</li>
-            <li>CSV Dataset</li>
-        </ul>
-    </div>
-
-    <div class="box">
-        <h2>📈 Key Insights</h2>
-        <ul>
-            <li>Instagram shows higher conversions than Facebook</li>
-            <li>Highest impressions come from the 18–24 age group</li>
-            <li>Mobile devices dominate user engagement</li>
-            <li>CTR fluctuates across months</li>
-        </ul>
-    </div>
-
-    <div class="box">
-        <h2>📷 Dashboard Preview</h2>
-        <img src="dashboard/dashboard_screenshot.png" alt="Dashboard Screenshot">
-    </div>
-
-    <div class="box">
-        <h2>📁 Dataset</h2>
+    <!-- Dataset Section -->
+    <div class="card">
+        <h2>Dataset Used</h2>
         <p>
-            The dataset used in this project is available in the
-            <code>dataset/</code> folder of this repository.
+            The dataset contains campaign-level social media analytics data including impressions,
+            clicks, CTR, spend, revenue, ROI, conversions, audience demographics, device types,
+            and platforms.
         </p>
+
+        <div class="links">
+            <a href="Dataset/US_Social_Media_Analytics_2024.csv" download>
+                ⬇ Download Dataset (CSV)
+            </a>
+
+            <a href="https://github.com/jb-123-ctrl/social-media-performance-dashboard" target="_blank">
+                🔗 View GitHub Repository
+            </a>
+        </div>
     </div>
 
-    <div class="box">
-        <h2>🔗 Live Dashboard (Optional)</h2>
-        <p>
-            <a href="#" target="_blank">Click here to view Power BI Dashboard</a>
-            <br>
-            <small>(Add Power BI Service link if available)</small>
-        </p>
-    </div>
-</section>
+    <footer>
+        © 2025 | Social Media Performance Dashboard | Power BI Project
+    </footer>
 
-<footer>
-    © 2025 | Future Intern – Task 2 | Created by You
-</footer>
+</div>
 
 </body>
 </html>
+
